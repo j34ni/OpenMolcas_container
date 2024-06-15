@@ -1,11 +1,11 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
  
 # Authors Jean Iaquinta
 # Contact jeani@uio.no
 # ORCID-0000-0002-8763-1643
-# Version v1.0.0
+# Version v1.0.1
 #
-# This is a definition file to illustrate the use of an Ubuntu22.04 container for OpenMolcas24.02 with the DMRG (Density Matrix Renormalization Group) option
+# This is a definition file to illustrate the use of an Ubuntu24.04 container for OpenMolcas24.02 with the DMRG (Density Matrix Renormalization Group) option
 
 # Update system and install basic packages
 RUN apt-get update -y && \
