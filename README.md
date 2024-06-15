@@ -1,8 +1,8 @@
 # OpenMolcas_container
 
-This is a Dockerfile based on `Ubuntu22.04.01` for OpenMolcas with the DMRG (Density Matrix Renormalization Group) option activated
+This is a Dockerfile based on **Ubuntu 22.04.01** for OpenMolcas with the DMRG (Density Matrix Renormalization Group) option activated
 
-This Dockerfile is for **OpenMolcas 24.02** with **GSL 2.7.1**, **MKL 2024.1.0**, **GA 5.8.2**, **OpemMPI 4.1.2** and **GCC 11.4.0**
+This Dockerfile is for **OpenMolcas 24.02** with **GSL 2.7.1**, **MKL 2024.1.0**, **GA 5.8.2**, **OpenMPI 4.1.2** and **GCC 11.4.0**
 
 
 ## Option A- Build the container yourself
