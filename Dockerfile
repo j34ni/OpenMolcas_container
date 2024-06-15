@@ -1,14 +1,14 @@
-FROM ubuntu:24.04
- 
+FROM ubuntu:22.04
+  
 # Authors Jean Iaquinta
 # Contact jeani@uio.no
-# ORCID-0000-0002-8763-1643
-# Version v1.0.1
+# Version v0.0.3
 #
-# This is a definition file to illustrate the use of an Ubuntu24.04 container for OpenMolcas24.02 with the DMRG (Density Matrix Renormalization Group) option
+# This is a definition file to illustrate the use of an Ubuntu22.04 container with OpenMolcas24.02 
+# Due to a vulnerability with libpmix the OS had to be upgraded to Ubuntu22.04.1
 
 # Update system and install basic packages
-RUN apt-get update -y && \
+RUN apt-get update -y && apt full-upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ca-certificates cmake g++ gcc gfortran git libboost-all-dev libgsl-dev libhdf5-serial-dev libopenmpi-dev make ncurses-term python3 python3-pip vim wget && \
     pip install pyparsing==2.3.1 && \
     rm -rf /var/lib/apt/lists/*
